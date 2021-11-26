@@ -1,0 +1,14 @@
+- name: Playbook to build and run Docker
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Run Docker container using tushendra/repo1
+      docker_container:
+        name: docker-container
+        image: tushendra/tushrepo1:26
+        state: started
+        recreate: yes
+        detach: true
+        pull: yes
+        ports:
+          - "8081:8080"

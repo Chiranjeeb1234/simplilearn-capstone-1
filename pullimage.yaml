@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  become: true
+  vars:
+    default_container_name: docker
+  tasks:
+                - name: pull an image
+                  docker_image:
+                        name: tushendra/tushrepo1
+                 
+                        
