@@ -2,7 +2,7 @@
   hosts: localhost
   gather_facts: false
   tasks:
-    - name: Run Docker container using tushendra/repo1
+    - name: Run Docker container using chiranjeeb/repo1
       docker_container:
         name: docker-container
         image: tushendra/tushrepo1:26
