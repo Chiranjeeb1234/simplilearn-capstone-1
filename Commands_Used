@@ -1,7 +1,7 @@
 DOCKER_COMMANDS:
 cd /home/tushvm-0/ansible-master
 #sh '/home/tushvm-0/ansible-master/script1.sh'
-sudo docker tag complete:0.0.1-SNAPSHOT tushendra/tushrepo1:$BUILD_NUMBER
+sudo docker tag complete:0.0.1-SNAPSHOT chiranjeeb/chiranjeeb1:$BUILD_NUMBER
 sudo docker image prune -af
 
 ANSIBLE_COMMANDS:
@@ -11,10 +11,10 @@ sudo ansible-playbook container-run.yaml
 GIT_COMMANDS:
  git init
  git add .
- git config --global user.email "mishratushendra@gmail.com"
- git config --global user.name "tushendra"
+ git config --global user.email "mishrajeeb@gmail.com"
+ git config --global user.name "chiranjeeb"
  git commit -m "adding file"
  git branch -M main
- git  remote add origin https://github.com/Tushendra/simplilearn-capstone-1.git
+ git  remote add origin https://github.com/Chiranjeeb/simplilearn-capstone-1.git
  git push -u origin main
 
