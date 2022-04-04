@@ -6,6 +6,6 @@
   tasks:
                 - name: pull an image
                   docker_image:
-                        name: tushendra/tushrepo1
+                        name: chiranjeeb/chiranjeeb1
                  
                         
